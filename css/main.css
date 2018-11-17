@@ -19,8 +19,9 @@ html {
   flex-wrap: nowrap;
 }
 
-.photo:nth-child() {
-
+.photo:nth-child(2),
+.photo:nth-child(5) {
+  display: none;
 }
 
 
