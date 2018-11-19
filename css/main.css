@@ -17,7 +17,6 @@ section {
   flex-wrap: wrap;
 }
 
-
 .photo {
   width: auto;
   max-width: 100%;
@@ -27,7 +26,6 @@ section {
 .photo:nth-child(5) {
   display: none;
 }
-
 
 @media only screen and (min-width: 25em) {
 
@@ -48,6 +46,7 @@ section {
 }
 
 @media only screen and (min-width: 38em) {
+
   .photo {
     width: 33.3333%;
   }
