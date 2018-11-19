@@ -12,11 +12,15 @@ html {
   text-size-adjust: 100%;
 }
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 .photo {
   width: auto;
   max-width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .photo:nth-child(2),
@@ -26,24 +30,37 @@ html {
 
 
 @media only screen and (min-width: 25em) {
-  .photo {
-    display: flex
-    flex-wrap: nowrap;
+
+  .photo:nth-child(1) {
+    display: flex;
+    width: 100%;
   }
+
+  .photo:nth-child(2),
+  .photo:nth-child(3),
+  .photo:nth-child(4),
+  .photo:nth-child(5) {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
   .photo {
-    width: 33\.3333%;
+    width: 33.3333%;
+  }
+
+  .photo:nth-child(5) {
+  display: none;
   }
 }
 
 @media only screen and (min-width: 60em) {
   .photo {
-    width: 66\.6666%;
+    width: 66.6666%;
   }
 
-  .photo:nth-child() {
-  display: none;
-  }
+
 }
