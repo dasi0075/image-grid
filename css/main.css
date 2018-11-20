@@ -26,8 +26,9 @@ section {
 }
 
 img {
-  display: inline-block;
   width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 .photo:nth-child(2),
@@ -55,12 +56,12 @@ img {
 
 @media only screen and (min-width: 38em) {
 
-  .photo {
-    width: 33.3333%;
+  .photo:nth-child(1) {
+    width: 100%;
   }
 
   .photo:nth-child(5) {
-  display: none;
+    display: none;
   }
 
   .photo:nth-child(2),
@@ -69,15 +70,16 @@ img {
     display: flex;
     flex-wrap: nowrap;
     width: 33.3333%;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
   .photo:nth-child(5) {
-  display: flex;
-  flex-wrap: wrap;
-  width: 33.333%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.333%;
   }
 
   .photo:nth-child(2),
