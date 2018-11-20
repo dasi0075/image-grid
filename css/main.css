@@ -39,7 +39,6 @@ img {
 @media only screen and (min-width: 25em) {
 
   .photo:nth-child(1) {
-    display: flex;
     width: 100%;
   }
 
@@ -47,8 +46,7 @@ img {
   .photo:nth-child(3),
   .photo:nth-child(4),
   .photo:nth-child(5) {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     width: 50%;
   }
 
@@ -67,8 +65,6 @@ img {
   .photo:nth-child(2),
   .photo:nth-child(3),
   .photo:nth-child(4) {
-    display: flex;
-    flex-wrap: wrap;
     width: 33.3333%;
   }
 
@@ -77,16 +73,13 @@ img {
 @media only screen and (min-width: 60em) {
 
   .photo:nth-child(5) {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     width: 33.333%;
   }
 
   .photo:nth-child(2),
   .photo:nth-child(3),
   .photo:nth-child(4) {
-    display: flex;
-    flex-wrap: wrap;
     width: 33.333%;
   }
 
